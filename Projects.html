@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+
+<header>
+    <div class="topnav">
+        <a href="Home.html" id="logo-link"><img alt="Portfolio Logo" id="logo" src="images/Logo.png"></a>
+        <ul class="nav-links">
+            <li><a href="Home.html">About Me</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Work.html">Work/Volunteer</a></li>
+            <li><a href="Clubs.html">Extra Curricular Activities</a></li>
+            <li><a href="References.html">References</a></li>
+            <li><a href="Contact.html">Contact Me!</a></li>
+        </ul>
+        <div class="topnav-right">
+            <a download href="documents/Mumuxu_Resume_2022.pdf">
+                <button id="download-resume-btn">Download Resume</button>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<div class="container-proj1">
+    <h2 id="proj1-title">Flexible Resistor Integrated Joint Angle Monitoring (FRIJAM)</h2>
+    <p>
+        The FRIJAM device was created by us to help the user develop their mind-body
+        connection during various physical exercises. The device is worn by the user over
+        any joint and serves as a feedback system to help heighten awareness as to how they
+        are moving their body. Additionally, there is an inbuilt critical warning system against
+        dangerous motions the user may perform and against injuries that might not manifest until
+        after the exercise.
+        <br><br>
+        To name a few examples, the FRIJAM device can be used to prevent hyperextension and other
+        such injuries in the gym, athletes can use it to train their bodies to move exactly
+        as needed, and physiotherapists can use it to remotely monitor the range of motion
+        of a recently discharged patient.
+        <br><br>
+        The product is made of three main components; first is the compressive sleeve worn
+        by the user that contains two strip like flex sensors. Next is our custom designed
+        PCB which contains a Wheatstone Bridge as well as other power supply architecture,
+        and finally a mobile android app to track your data and manage exercises sessions.
+    </p>
+
+    <div><a download href="documents/CAPSTONE%20FINAL%20REPORT.pdf">
+        <button class="download-btn" id="btn-proj1">Download Report</button>
+    </a></div>
+
+    <div class="container-proj1-slides">
+        <div class="slides-1">
+            <input checked id="r1-1" name="r1" type="radio">
+            <input id="r1-2" name="r1" type="radio">
+            <input id="r1-3" name="r1" type="radio">
+            <input id="r1-4" name="r1" type="radio">
+            <input id="r1-5" name="r1" type="radio">
+
+            <div class="slide-1 s1">
+                <img class="slide-1-img" alt="FRIJAM Logo" src="Project%20Pictures/capstone_1.jpg">
+            </div>
+            <div class="slide-1">
+                <img class="slide-1-img" alt="PCB Render" src="Project%20Pictures/capstone_2.png">
+            </div>
+            <div class="slide-1">
+                <img class="slide-1-img" alt="PCB Circuit Diagram" src="Project%20Pictures/capstone_3.png">
+            </div>
+            <div class="slide-1">
+                <img class="slide-1-img" alt="Workflow Diagram" src="Project%20Pictures/capstone_4.jpg">
+            </div>
+            <div class="slide-1">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen frameborder="0" height="760"
+                        src="https://www.youtube.com/embed/0IhJRloJJ5E"
+                        title="FRIJAM vFair Video"
+                        width="60%"></iframe>
+            </div>
+
+            <div class="slideshow-navbar-1">
+                <label class="bar1" for="r1-1"></label>
+                <label class="bar1" for="r1-2"></label>
+                <label class="bar1" for="r1-3"></label>
+                <label class="bar1" for="r1-4"></label>
+                <label class="bar1" for="r1-5"></label>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-proj2">
+    <h2 id="proj2-title">Noise in Digital Image Processing</h2>
+    <p>
+        In this research project I take deep dive into real and digital image noise. How
+        digital noise is created, what factors into it and why it is so difficult to work with.
+        In this report I implement support vector machines to try and detect and identify noise
+        in a large grayscale dataset. Following this I run another experiment to denoise the same
+        dataset using AutoEncoder Neural Networks. My findings from this initial research report
+        give me a humbling experience as many of my models did not actually work, but also a firm
+        understanding of the complexities of noise is digital images.
+        <br><br>
+        This project peaked my interest quite a bit, and I am currently working on a secondary phase
+        to my research. I want to find a way to more reliably detect and identify noise in an image
+        but without the use of deep learning as it is a rather slow and resource demanding approach.
+    </p>
+    <div><a download href="documents/Image_Noise_Research_Paper.pdf">
+        <button class="download-btn" id="btn-proj2">Download Research Paper</button>
+    </a>
+    </div>
+
+    <h4 id="proj2-code-title">Predicting whether an image has code using Support Vector Machines:</h4>
+    <div id="proj2-code">
+        <script src="https://gist.github.com/mumuxus/b7c3da5ba538983f0b85aeade813ab5c.js"></script>
+    </div>
+    <h4 class="proj2-code-title-rest">Using SVM to perform a multiclass classification to predict the type of noise
+        present in an image:</h4>
+    <div class="proj2-code-rest">
+        <script src="https://gist.github.com/mumuxus/0c98d29830e9ffb3614b87da0837d94f.js"></script>
+    </div>
+    <h4 class="proj2-code-title-rest">Using an Auto Encoder Network to denoise images in a large landscape dataset:</h4>
+    <div class="proj2-code-rest">
+        <script src="https://gist.github.com/mumuxus/6f36a309dd31533d756e11ffce28cfd8.js"></script>
+    </div>
+</div>
+
+
+<div class="container-proj3">
+    <h2 id="proj3-title">File Sharing Service</h2>
+    <p>
+        In this project I create a network file sharing application between a client
+        and server. It is coded in Python using the Berkeley/POSIX API. The server software
+        is run on a file sharing server and manages a directory that contains files to be shared.
+        The client software communicates with the server in order to upload, list and retrieve the
+        shared files. Using TCP and UDP connections I implement methods such as packet boardcasting
+        for service discovery and multi-threaded execution so the server can interact with multiple
+        concurrent client connections.
+    </p>
+
+    <div class="proj3-carousel-container">
+        <div class="navigation">
+            <div class="prev nav-btn"><</div>
+            <div class="next nav-btn">></div>
+        </div>
+        <div class="proj3-carousel">
+            <div class="item main">
+				<pre>
+from ctypes.wintypes import MSG
+from fileinput import filename
+from multiprocessing import connection
+import socket
+import argparse
+from tempfile import TemporaryFile
+import time
+import select
+import os
+
+from numpy import broadcast, byte, rec
+
+CMD_FIELD_LEN            = 1 # 1 byte commands sent from the client.
+FILENAME_SIZE_FIELD_LEN  = 1 # 1 byte file name size field.
+FILESIZE_FIELD_LEN       = 8 # 8 byte file size field.
+
+CMD = {
+	"GET": 1,
+	"PUT": 2,
+	"LIST": 3,
+	"BYE": 4,
+}
+
+MSG_ENCODING = "utf-8"
+SOCKET_TIMEOUT = 1000
+
+def recv_bytes(sock, bytecount_target):
+    # Be sure to timeout the socket if we are given the wrong
+    # information.
+    sock.settimeout(SOCKET_TIMEOUT)
+    try:
+        byte_recv_count = 0 # total received bytes
+        recv_bytes = b''    # complete received message
+        while byte_recv_count < bytecount_target:
+            # Ask the socket for the remaining byte count.
+            new_bytes = sock.recv(bytecount_target-byte_recv_count)
+            # If ever the other end closes on us before we are done,
+            # give up and return a False status with zero bytes.
+            if not new_bytes:
+                return(False, b'')
+            byte_recv_count += len(new_bytes)
+            recv_bytes += new_bytes
+        # Turn off the socket timeout if we finish correctly.
+        sock.settimeout(None)
+        return (True, recv_bytes)
+    # If the socket times out, something went wrong. Return a False
+    # status.
+    except socket.timeout:
+        sock.settimeout(None)
+        print("recv_bytes: Recv socket timeout!")
+        return (False, b'')
+
+class Client:
+
+	HOSTNAME = "localhost"
+	MSG_ENCODING = "utf-8"
+
+	UDP_PORT = 30000
+	TCP_PORT = 30001
+
+	RECV_SIZE = 10
+	BUFFER_SIZE = 4096
+
+	REMOTE_FILE_NAME = "sr.txt"
+	LOCAL_FILE_NAME = "Cl.txt"
+
+	COMMAND = ""
+	FILENAME = ""
+
+	def __init__(self):
+		self.connection_handler()
+
+	def connection_handler(self):
+		running = True
+
+		while(running):
+			self.COMMAND = input("Please enter your command: ")
+
+			#scan for UDP sockets and conncet
+			if(self.COMMAND == "SCAN"):
+				self.get_UDP_socket()
+				self.connect_to_UDP_server()
+			#list out all local files
+			elif(self.COMMAND == "LLIST"):
+				self.list_local_files()
+			#connect to a tcp socket
+			elif(self.COMMAND[0:7]=="connect"):
+				splits = self.COMMAND.split()
+				Client.HOSTNAME = splits[1]
+				Client.TCP_PORT = int(splits[2])
+				self.get_TCP_socket()
+				self.connect_to_TCP_server()
+			#obtain remote files list
+			elif(self.COMMAND == "RLIST"):
+				self.list_remote_files()
+			#put file command, sending file to the server
+			elif(self.COMMAND[0:3] == "PUT"):
+				#syntax: put filename.txt
+				Client.LOCAL_FILE_NAME = self.COMMAND[4:]
+				Client.REMOTE_FILE_NAME = self.COMMAND[4:]
+
+				self.put_file()
+				self.list_remote_files()
+			elif(self.COMMAND[0:3] == "GET"):
+				#syntax: get filename.txt
+				Client.LOCAL_FILE_NAME = self.COMMAND[4:]
+				Client.REMOTE_FILE_NAME = self.COMMAND[4:]
+
+				self.get_file()
+				self.list_local_files()
+			elif(self.COMMAND=="BYE"):
+				self.END()
+				print("Ending Connection")
+			else:
+				print("Invalid command....")
+				print(self.COMMAND)
+
+	#UDP Socket stuff
+
+	def get_UDP_socket(self):
+		try:
+			self.udpSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		except Exception as msg:
+			print(msg)
+			exit()
+
+	def connect_to_UDP_server(self):
+		try:
+			self.udpSocket.connect((Client.HOSTNAME, Client.UDP_PORT))
+		except Exception as msg:
+			print(msg)
+			exit()
+
+		print("Connected to UDP port {}".format(Client.UDP_PORT))
+		message_confirm = "SERVICE DISCOVERY"
+
+		self.udpSocket.sendall(message_confirm.encode(MSG_ENCODING))
+
+		print("Sent: {} to Server".format(message_confirm.encode(MSG_ENCODING)))
+
+		response = self.udpSocket.recvfrom(1024)
+		data_packet = response[0].decode(MSG_ENCODING)
+		address = response[1]
+		print("Received: {} from {}".format(data_packet, address))
+
+	#TCP Socket stuff
+
+	def get_TCP_socket(self):
+		try:
+			self.tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+			print("TCP Socket created...")
+		except Exception as msg:
+			print(msg)
+			exit()
+
+	def connect_to_TCP_server(self):
+		try:
+			self.tcpSocket.connect((Client.HOSTNAME, Client.TCP_PORT))
+		except Exception as msg:
+			print(msg)
+			exit(1)
+
+	#local list function
+	def list_local_files(self):
+
+		path = os.path.dirname(os.path.abspath(__file__))
+		file_list = os.listdir(path)
+
+		packet = ""
+		for file in file_list:
+			packet = packet + file + "\n"
+		print(packet)
+
+	#Remote List Function
+
+	def list_remote_files(self):
+
+		#converting cmd list command from dictionary '3' to a 1 byte message
+		cmd_field = CMD["LIST"].to_bytes(CMD_FIELD_LEN, byteorder="big")
+
+		self.tcpSocket.sendall(cmd_field)
+
+		status, file_size_bytes = recv_bytes(self.tcpSocket, FILESIZE_FIELD_LEN)
+		if not status:
+			print("Closing Connection...")
+			self.tcpSocket.close()
+			return
+
+		file_size = int.from_bytes(file_size_bytes, byteorder="big")
+
+		status, file_bytes = recv_bytes(self.tcpSocket, file_size)
+		if not status:
+			print("Closing Connection...")
+			self.tcpSocket.close()
+			return
+
+		dir = file_bytes.decode(MSG_ENCODING)
+		print("Remote Directory = \n{}".format(dir))
+
+	def END(self):
+		cmd_field = CMD["BYE"].to_bytes(CMD_FIELD_LEN, byteorder='big')
+
+		packet = cmd_field
+
+		self.tcpSocket.sendall(packet)
+		self.tcpSocket.close()
+
+	#Put file function
+	def put_file(self):
+		cmd_prompt = CMD["PUT"].to_bytes(CMD_FIELD_LEN, byteorder='big')
+		packet = cmd_prompt
+
+		self.tcpSocket.sendall(packet)
+		name = self.LOCAL_FILE_NAME
+
+		size = os.path.getsize(name)
+		a = ' '
+		self.tcpSocket.send(f"{name}{a}{size}".encode())
+
+		with open(name, 'rb') as fi:
+			while True:
+				readbytes = fi.read(4096)
+				if not readbytes:
+					break
+				self.tcpSocket.sendall(readbytes)
+
+		print('File Sent')
+		return True
+
+	def get_file(self):
+		name = self.LOCAL_FILE_NAME
+
+		cmd_prompt = CMD["GET"].to_bytes(CMD_FIELD_LEN, byteorder='big')
+		name_field = name.encode(MSG_ENCODING)
+
+		packet = cmd_prompt+name_field
+
+		self.tcpSocket.sendall(packet)
+
+		recieve = self.tcpSocket.recv(4096).decode()
+
+		name2, size = recieve.split(' ')
+
+		name2 = os.path.basename(name)
+
+		size = int(size)
+
+		print('The File Size is: ', size)
+
+		with open(name2,'wb') as fi:
+			while True:
+				readbytes = self.tcpSocket.recv(4096)
+				if not readbytes:
+					break
+				fi.write(readbytes)
+
+		print('File Recieved')
+
+
+if __name__ == "__main__":
+    c = Client()
+        </pre>
+                <div class="caption">Client Code</div>
+            </div>
+            <div class="item">
+			<pre>
+            from ctypes.wintypes import MSG
+from fileinput import filename
+import socket
+import argparse
+from struct import pack
+from tempfile import TemporaryFile
+import time
+import select
+import os
+
+from numpy import broadcast, byte, rec
+
+CMD_FIELD_LEN            = 1 # 1 byte commands sent from the client.
+FILENAME_SIZE_FIELD_LEN  = 1 # 1 byte file name size field.
+FILESIZE_FIELD_LEN       = 8 # 8 byte file size field.
+
+CMD = {
+	"GET": 1,
+	"PUT": 2,
+	"LIST": 3,
+	"BYE": 4,
+}
+
+MSG_ENCODING = "utf-8"
+SOCKET_TIMEOUT = 1000
+
+def recv_bytes(sock, bytecount_target):
+    # Be sure to timeout the socket if we are given the wrong
+    # information.
+    sock.settimeout(SOCKET_TIMEOUT)
+    try:
+        byte_recv_count = 0 # total received bytes
+        recv_bytes = b''    # complete received message
+        while byte_recv_count < bytecount_target:
+            # Ask the socket for the remaining byte count.
+            new_bytes = sock.recv(bytecount_target-byte_recv_count)
+            # If ever the other end closes on us before we are done,
+            # give up and return a False status with zero bytes.
+            if not new_bytes:
+                return(False, b'')
+            byte_recv_count += len(new_bytes)
+            recv_bytes += new_bytes
+        # Turn off the socket timeout if we finish correctly.
+        sock.settimeout(None)
+        return (True, recv_bytes)
+    # If the socket times out, something went wrong. Return a False
+    # status.
+    except socket.timeout:
+        sock.settimeout(None)
+        print("recv_bytes: Recv socket timeout!")
+        return (False, b'')
+
+class Server:
+	HOSTNAME = "localhost"
+
+	UDP_PORT = 30000
+	TCP_PORT = 30001
+
+	RECV_SIZE = 1024
+	MAX_CONNECTION_BACKLOG = 5
+
+	ACCEPTED_BROADCAST_PACKET = "SERVICE DISCOVERY"
+	#Sumer Harsimran File Sharing Service
+	ACCEPTED_UDP_RESPONSE = "MJM File Sharing Service"
+
+	def __init__(self):
+		self.create_listen_sockets()
+		self.process_connections_forever()
+
+	def create_listen_sockets(self):
+		try:
+			#TCP Socket
+			self.tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+			self.tcpSocket.bind((Server.HOSTNAME, Server.TCP_PORT))
+			self.tcpSocket.listen(Server.MAX_CONNECTION_BACKLOG)
+			self.tcpSocket.setblocking(False)
+			print("Listening on TCP port {} ...".format(Server.TCP_PORT))
+
+			#UDP Socket
+			self.udpSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+			self.udpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+			self.udpSocket.bind((Server.HOSTNAME, Server.UDP_PORT))
+			self.udpSocket.setblocking(False)
+			print("Listening on UDP port {} ...".format(Server.UDP_PORT))
+
+		except Exception as msg:
+			print(msg)
+			exit(1)
+
+	def process_connections_forever(self):
+
+		inputs = [self.tcpSocket, self.udpSocket]
+		outputs = []
+
+		while inputs:
+			readable, writable, exceptional = select.select(inputs, outputs, inputs)
+			# readable - have incoming data buffered and available to read
+			# writable - have free space in their buffer and can be written
+			# exceptional - have had an error
+
+			for client in readable:
+				if client is self.tcpSocket:
+					print("\nTCP Socket can be read\n")
+					r = self.tcp_connection_handler(client)
+				elif client is self.udpSocket:
+					print("\nUDP Socket can be read\n")
+					r = self.udp_connection_handler(client)
+				else:
+					r = True
+
+				if not r:
+					return
+
+	def udp_connection_handler(self, client):
+		broadcast_packet = self.udpSocket.recvfrom(Server.RECV_SIZE)
+		data_packet = broadcast_packet[0].decode(MSG_ENCODING)
+		address = broadcast_packet[1]
+
+		if data_packet == Server.ACCEPTED_BROADCAST_PACKET:
+			try:
+				print("Received {} from client ... Sending Response".format(data_packet))
+				self.udpSocket.sendto(Server.ACCEPTED_UDP_RESPONSE.encode(MSG_ENCODING), address)
+
+			except Exception as msg:
+				print(msg)
+				return False
+		else:
+			print("Received {} from client, not an accepted request".format(data_packet))
+		return True
+
+
+	def tcp_connection_handler(self, client):
+		connection, address = self.tcpSocket.accept()
+		print("-" * 72)
+		print("Connection received from TCP Socket {}.".format(address))
+
+		status, cmd_prompt = recv_bytes(connection, CMD_FIELD_LEN)
+
+		if not status:
+			print("Closing Connection....")
+			self.tcpSocket.close()
+			return False
+
+		cmd_prompt = int.from_bytes(cmd_prompt, byteorder='big')
+
+		if cmd_prompt == CMD["GET"]:
+			r = self.send_file(connection)
+		elif cmd_prompt == CMD["PUT"]:
+			print("Put command entered")
+			r = self.receive_file(connection)
+		elif cmd_prompt == CMD["LIST"]:
+			r = self.list_file(connection)
+		elif cmd_prompt == CMD["BYE"]:
+			print("Closing connection ...")
+			connection.close()
+			return False
+		else:
+			r = True
+
+		if not r:
+			return False
+		return True
+
+	def send_file(self, connection):
+		file_bytes = connection.recv(4096)
+		print('Sending Files')
+
+		name = file_bytes.decode(MSG_ENCODING)
+		print('File Requested: ', name)
+
+		path = os.path.dirname(os.path.abspath(__file__))
+		list = os.listdir(path)
+
+		packet = ''
+
+		for file in list:
+			packet = packet + file +'\n'
+
+		if (name not in packet):
+			print('File not found.')
+			connection.close()
+
+		a = ' '
+		size = os.path.getsize(name)
+		print("File size is", size)
+		connection.send(f"{name}{a}{size}".encode())
+
+		with open (name, 'rb') as fi:
+			while True:
+				readbytes = fi.read(4096)
+				if not readbytes:
+					break
+				connection.sendall(readbytes)
+
+		print('File Sent')
+
+		return True
+
+	def receive_file(self, connection):
+		print('Recieving File....')
+
+		recieve = connection.recv(4096).decode()
+		name, size = recieve.split(' ')
+
+		name = os.path.basename(name)
+
+		size = int(size)
+
+		with open(name, 'wb') as fi:
+			while True:
+				readbytes = connection.recv(4096)
+				if not readbytes:
+					break
+				fi.write(readbytes)
+
+		print('File Recieved')
+
+	def list_file(self, connection):
+		dir_path = os.path.dirname(os.path.abspath(__file__))
+		list = os.listdir(dir_path)
+
+		packet = ''
+
+		for file in list:
+			packet = packet + file +'\n'
+
+		file_size_bytes = len(packet).to_bytes(FILESIZE_FIELD_LEN, byteorder='big')
+		dir = packet.encode(MSG_ENCODING)
+		packet = file_size_bytes+dir
+
+		try:
+			connection.sendall(packet)
+			print("Sending file names in directory")
+			print('Total file bytes: ', file_size_bytes.hex(), "\n")
+		except socket.error:
+			print('ERROR: Closing Connection')
+			connection.close()
+			return False
+		return True
+
+if __name__ == "__main__":
+    s = Server()
+        </pre>
+                <div class="caption">Server Code</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tools">
+    <div class="label">Tools</div>
+    <div class="spacer"></div>
+    <div class="tools-item"><span onclick="scrollTop()">Scroll to top</span></div>
+    <div class="tools-item"><span onclick="theme()">Surprise!</span></div>
+    <div class="tools-item"><span onclick="search()">Search</span></div>
+    <div class="tools-item"><label for="key"></label><input id="key" placeholder="Search..."></div>
+</div>
+
+<script src="unit4-slider.js"></script>
+<script src="unit5-tools.js"></script>
+
+</body>
+<div class="bottomnav">
+    <a href="mailto: mumuxu1101@gmail.com"><img alt="Send me an email!" class="icon" height="50"
+                                                src="images/email_black_24dp.svg"
+                                                width="50"></a>
+    <a href="https://www.linkedin.com/in/mumuxu-shah-0a2991149/"><img alt="Connect with me on LinkedIn!"
+                                                                      class="icon"
+                                                                      height="50" src="images/linked-in-icon-2.jpg"
+                                                                      width="50"></a>
+    <a href="https://github.com/mumuxus"><img alt="Check out my GitHub!" class="icon" height="50"
+                                              src="images/github_logo.jpg"
+                                              width="70"></a>
+</div>
+</html>
+<!--<script>-->
+<!--	let scrollbtn;-->
+<!--	scrollbtn = document.querySelector('#scroll');-->
+<!--	scrollbtn.addEventListener("click", function () {-->
+<!--		window.scrollTo(0, 0);-->
+<!--	});-->
+<!--</script>-->

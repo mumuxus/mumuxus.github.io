@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mumuxu Shah</title>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+
+<header>
+    <div class="topnav">
+        <a href="Home.html" id="logo-link"><img alt="Portfolio Logo" id="logo" src="images/Logo.png"></a>
+        <ul class="nav-links">
+            <li><a href="Home.html">About Me</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Work.html">Work/Volunteer</a></li>
+            <li><a href="Clubs.html">Extra Curricular Activities</a></li>
+            <li><a href="References.html">References</a></li>
+            <li><a href="Contact.html">Contact Me!</a></li>
+        </ul>
+        <div class="topnav-right">
+            <a download href="documents/Mumuxu_Resume_2022.pdf">
+                <button id="download-resume-btn">Download Resume</button>
+            </a>
+        </div>
+    </div>
+</header>
+
+<body>
+<div class="container-home">
+    <img alt="Self Portrait: Mumuxu Shah" id="portrait" src="images/self_portrait_1.jpg" onclick="theme()">
+
+    <div id="intro">
+        <H1 id="hiMessage">Hi, I'm <span id="hiMessage_span">Mumuxu</span>!</H1>
+        <p>
+            I just recently graduated from McMaster University with a bachelors of electrical engineering. After many
+            enduring
+            years at school I have learned an array of skills and developed a passion
+            for code that I believe has set me up for future successes in the industry. Being technically inclined since
+            my
+            childhood I have picked up various competencies along the way, be it in the classroom
+            or through extracurriculars like FIRST robotics or Formula Electric.
+        </p>
+        <p>
+            Beyond the robots and computers however, some of the best words of advice given to me was that "University
+            is a
+            place of metamorphosis for a student/person". During the years as an
+            undergraduate I not only doubled down on my passions for technology, but I also found a new love for
+            meditation,
+            spirituality, literature, music and so much more. No doubt this experience has
+            transformed me as an individual and as one phase of my life comes to a close I am eager to bring myself and
+            my
+            experiences with me to the workplace.
+        </p>
+    </div>
+</div>
+<div class="tools">
+    <div class="label">Tools</div>
+    <div class="spacer"></div>
+    <div class="tools-item"><span onclick="scrollTop()">Scroll to top</span></div>
+    <div class="tools-item"><span onclick="theme()">Surprise!</span></div>
+    <div class="tools-item"><span onclick="search()">Search</span></div>
+    <div class="tools-item"><label for="key"></label><input id="key" placeholder="Search..."></div>
+</div>
+
+<script src="unit5-tools.js"></script>
+
+</body>
+
+<div class="bottomnav">
+    <a href="mailto: mumuxu1101@gmail.com"><img alt="Send me an email!" class="icon" height="50"
+                                                src="images/email_black_24dp.svg"
+                                                width="50"></a>
+    <a href="https://www.linkedin.com/in/mumuxu-shah-0a2991149/"><img alt="Connect with me on LinkedIn!"
+                                                                      class="icon"
+                                                                      height="50" src="images/linked-in-icon-2.jpg"
+                                                                      width="50"></a>
+    <a href="https://github.com/mumuxus"><img alt="Check out my GitHub!" class="icon" height="50"
+                                              src="images/github_logo.jpg"
+                                              width="70"></a>
+</div>
+</html>
+
